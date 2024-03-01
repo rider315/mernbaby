@@ -18,6 +18,7 @@ const corsOptions={
             "https://api.ridescom.com",
             "https://api.www.ridescom.com",
         ];
+        
         const isAllowed=allowedOrigins.includes(origin);
         callback(null,isAllowed ? origin: false);
 
