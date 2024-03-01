@@ -9,7 +9,8 @@ const adminRoute=require("./router/admin-router");
 const connectDB=require("./utils/db");
 const errorMiddleware = require("./middlewares/error-middleware");
 const corsOptions={
-    origin:"http://localhost:5173",
+    // origin:"http://localhost:5173",
+    origin:"http://ridescom.com",
     methods:"GET, POST, PUT,DELETE,PATCH,HEAD",
     credentials:true,
 }
