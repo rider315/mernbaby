@@ -53,7 +53,7 @@ app.use("/api/admin",adminRoute);
 // });
 
 
-const PORT=5001;
+const PORT=5002;
 connectDB().then(()=>{
 
     app.listen(PORT,()=>{
