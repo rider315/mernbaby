@@ -48,7 +48,7 @@ export const Blogpost = () => {
                         &middot;
                     {format(new Date(blogpost.publishedAt), "dd MMMM yyyy")}</>}
                 </p>
-                <PortableText value={blogpost.bogy}/>
+                <PortableText value={blogpost.body}/>
             </section>}
             <div className="max-w-7xl mx-auto px-5 mb-20 flex items-end justify-end">
                 <Link to="/blog" className="bg-white py-2 px-8 rounded shadow text-slate-800 tracking-wide hover:opacity-75 transition-all duration-200 w-full md:w-auto">
