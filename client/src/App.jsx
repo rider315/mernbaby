@@ -13,10 +13,17 @@ import { AdminLayout } from "./components/layouts/Admin-Layouts";
 import { AdminUsers } from "./pages/Admin-Users";
 import { AdminContacts } from "./pages/Admin-Contacts";
 import { AdminUpdate } from "./pages/Admin-Update";
+import {Blog} from "./pages/Blog";
+import {Blogpost} from "./pages/Blogpost";
+import {Homeblog} from "./pages/Homeblog";
+import { ScrollToTop } from "./components/ScrollToTop";
+
+
 const App = () => {
   return (
     <>
     <Router>
+      <ScrollToTop/>
       <Navbar/>
       <Routes>
         <Route path="/" element={<Home />} />
@@ -26,7 +33,12 @@ const App = () => {
         <Route path="/register" element={<Register />} /> 
         <Route path="/login" element={<Login />} />
         <Route path="/logout" element={<Logout />} />
+        <Route path="/blog" element={<Blog />} />
+        {/* <Route path="/profile" element={<Profile />} /> */}
+        <Route path="/homeblog" element={<Homeblog />} />
+        <Route path="/blog/:slug" element={<Blogpost />} />
         <Route path="*" element={<Error />} />
+        {/* <Route path="/newsletter" element={<Newsletter />} /> */}
         <Route path="/admin" element={<AdminLayout/>}>
             <Route path="users" element={<AdminUsers/>}/>
             <Route path="contacts" element={<AdminContacts/>}/>

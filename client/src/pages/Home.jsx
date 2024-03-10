@@ -1,8 +1,12 @@
 import { Analytics } from "../components/Analytics";
 import Lottie from 'lottie-react';
 import Animation from "../Animation.json";
+import React, { useState, useEffect } from "react";
 
 export const Home = () => {
+  useEffect(()=>{
+    document.title="Rider Infinity"
+  },[]);
     return (
       <>
         <main>
